@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Send, X } from 'lucide-react';
 import nexaGenLogo from '../../assets/logo.png';
+import { Link } from 'react-router-dom'
 
 // --- Easily Editable Social Links ---
 const socialLinks = {
@@ -52,7 +53,7 @@ export default function Footer() {
             <div className="text-center">
               <h3 className="font-semibold tracking-wider uppercase">Quick Links</h3>
               <div className="mt-4 flex flex-col space-y-2 text-sm">
-                <a href="#/about-us" className="text-gray-400 hover:text-white transition-colors">About Us</a>
+                <Link to="/about-us" className="text-gray-400 hover:text-white transition-colors">About Us</Link>
                 <button onClick={() => setIsModalOpen(true)} className="text-gray-400 hover:text-white transition-colors">Contact Us</button>
               </div>
             </div>

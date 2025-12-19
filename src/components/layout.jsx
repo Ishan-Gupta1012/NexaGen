@@ -179,6 +179,7 @@ export default function Layout() {
     { title: "Interview Prep", to: "/interview-prep", icon: Mic },
     { title: "Career Explorer", to: "/career-explorer", icon: Map },
     { title: "Strategies", to: "/strategies", icon: Lightbulb },
+    { title: "About Us", to: "/about-us", icon: Info },
   ].filter(Boolean);
 
 
